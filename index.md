@@ -21,9 +21,9 @@ Upon running the "Final Check" request, 42/44 tests passed. The specific failure
 Fix: Set collection level auth api-key: expected false to equal true
 ```
 
-![Screenshot of the Assertion Error in Postman](/postman_error_Halfway_Check.png)
+![Screenshot of the Assertion Error in Postman](postman_error_Halfway_Check.png)
 
-![Screenshot of the Assertion Error in Postman](/postman_error_Final_Check.png)
+![Screenshot of the Assertion Error in Postman](postman_error_Final_Check.png)
 
 ## The Root Cause
 
