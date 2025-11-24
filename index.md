@@ -130,8 +130,4 @@ To resolve the `AssertionError`, the authorization must be moved to the Collecti
       >VERIFY</a
     >
   </p>
-  <script
-    async="async"
-    src="https://postman.badges.parchment.com/assets/widgets.bundle.js"
-  ></script>
 </blockquote>
