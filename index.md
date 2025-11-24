@@ -51,89 +51,9 @@ After applying the fix, I re-ran the "Final Check" request to verify the solutio
 
 ![Screenshot of the succeeded Final Check](postman_succeeded_final_check.png)
 
-## Postman API Fundamentals Student Expert Badge
+## Certification Earned
+Postman API Fundamentals Student Expert
 
-<blockquote
-  class="badgr-badge"
-  style="font-family: Helvetica, Roboto, 'Segoe UI', Calibri, sans-serif"
->
-  <a
-    href="https://badges.parchment.com/public/assertions/IZi0yw7eQ0GeDnybEIe8HA"
-    ><img
-      width="120px"
-      height="120px"
-      src="https://badges.parchment.com/public/assertions/IZi0yw7eQ0GeDnybEIe8HA/image"
-  /></a>
-  <p
-    class="badgr-badge-name"
-    style="
-      hyphens: auto;
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-      margin: 0;
-      font-size: 16px;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.25;
-      letter-spacing: normal;
-      text-align: left;
-      color: #05012c;
-    "
-  >
-    Postman API Fundamentals Student Expert
-  </p>
-  <p
-    class="badgr-badge-date"
-    style="
-      margin: 0;
-      font-size: 12px;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.67;
-      letter-spacing: normal;
-      text-align: left;
-      color: #555555;
-    "
-  >
-    <strong
-      style="
-        font-size: 12px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.67;
-        letter-spacing: normal;
-        text-align: left;
-        color: #000;
-      "
-      >Awarded: </strong
-    >November 2025
-  </p>
-  <p style="margin: 16px 0; padding: 0">
-    <a
-      class="badgr-badge-verify"
-      target="_blank"
-      href="https://badgecheck.io?url=https%3A%2F%2Fbadges.parchment.com%2Fpublic%2Fassertions%2FIZi0yw7eQ0GeDnybEIe8HA"
-      style="
-        box-sizing: content-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        font-size: 14px;
-        font-weight: bold;
-        width: 48px;
-        height: 16px;
-        border-radius: 4px;
-        border: solid 1px black;
-        text-decoration: none;
-        padding: 6px 16px;
-        margin: 16px 0;
-        color: black;
-      "
-      aria-label="Verify (opens in new window)"
-      >VERIFY</a
-    >
-  </p>
-</blockquote>
+<a href="https://badges.parchment.com/public/assertions/IZi0yw7eQ0GeDnybEIe8HA" target="_blank">
+<img src="https://badges.parchment.com/public/assertions/IZi0yw7eQ0GeDnybEIe8HA/image" width="150" alt="Postman Certified Badge">
+</a>
