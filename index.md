@@ -6,13 +6,10 @@
 **Difficulty:** Beginner
 
 ## Overview
+During the validation of the **Postman Library API v2** collection, the automated test suite failed with an assertion error regarding API Key authentication. This guide documents the debugging process, the root cause analysis, and the resolution using Collection-Level Authorization.
 
-While validating the **Postman Library API v2** collection, the automated test suite failed with an assertion error regarding API Key authentication. This guide details the root cause—improper scope configuration—and the steps to resolve it using Collection-Level Authorization.
-
-## The Error
-
-**Scenario:**
-Upon running the "Final Check" request, 42/44 tests passed. The specific failure occurred during the authorization validation step.
+## 1. The Error
+Upon running the "Final Check" request in the test suite, 42 out of 44 tests passed. The specific failure occurred during the authorization validation step.
 
 **Error Message:**
 
@@ -25,23 +22,32 @@ Fix: Set collection level auth api-key: expected false to equal true
 
 ![Screenshot of the Assertion Error in Postman](postman_error_final_check.png)
 
-## The Root Cause
+## 2. The Root Cause
 
-The automated test script checks for credentials at the Collection Level (Parent), but the API Key was configured at the Request Level (Child). Furthermore, the Key Name was incorrectly labeled as `student-expert` instead of the required header name `api-key.`
+I inspected the request headers and the collection configuration to isolate the issue.
 
-## The Fix
+1. **Scope Mismatch:** The automated test script checks for credentials at the **Collection Level** (Parent). However, the API Key was configured at the **Request Level** (Child).
+2. **Naming Convention:** The Key Name was incorrectly labeled as `student-expert`. The API specification explicitly requires the header name `api-key`.
 
-To resolve the `AssertionError`, the authorization must be moved to the Collection level so all requests inherit it automatically.
+## 3. The Fix
 
-1. Select the Postman Library API v2 folder in the sidebar.
-2. Navigate to the Authorization tab.
-3. Set the Type to `API Key.`
+To resolve the `AssertionError`, I refactored the authorization to use **Parent Inheritance**. This ensures that any new request added to the collection automatically uses the correct credentials without manual input.
+
+**Steps Taken:**
+
+1. Select the **Postman Library API v2** folder in the sidebar.
+2. Navigate to the **Authorization** tab.
+3. Set the **Type** to `API Key`.
 4. Configure the credentials:
-   - Key: `api-key`
-   - Value: `secret_key`
-5. Save the changes and re-run the Final Check request.
+   - **Key:** `api-key`
+   - **Value:** `{{secret_key}}`
+5. **Saved** the changes to the collection.
 
 ![Screenshot of the correct Collection Authorization settings](postman_auth_settings.png)
+
+## 4. Verification
+
+After applying the fix, I re-ran the "Final Check" request to verify the solution. The test suite returned a 200 OK status with 44/44 tests passed.
 
 ![Screenshot of the succeeded Final Check](postman_succeeded_final_check.png)
 
