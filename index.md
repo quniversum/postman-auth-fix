@@ -21,9 +21,9 @@ Upon running the "Final Check" request, 42/44 tests passed. The specific failure
 Fix: Set collection level auth api-key: expected false to equal true
 ```
 
-![Screenshot of the Assertion Error in Postman](postman_error_Halfway_Check.png)
+![Screenshot of the Assertion Error in Postman](postman_error_halfway_check.png)
 
-![Screenshot of the Assertion Error in Postman](postman_error_Final_Check.png)
+![Screenshot of the Assertion Error in Postman](postman_error_final_check.png)
 
 ## The Root Cause
 
@@ -38,7 +38,7 @@ To resolve the `AssertionError`, the authorization must be moved to the Collecti
 3. Set the Type to `API Key.`
 4. Configure the credentials:
    - Key: `api-key`
-   - Value: `{{secret_key}}`
+   - Value: `secret_key`
 
 ![Screenshot of the correct Collection Authorization settings](postman_auth_settings.png)
 
