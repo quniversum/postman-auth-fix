@@ -52,7 +52,7 @@ After applying the fix, I re-ran the "Final Check" request to verify the solutio
 ![Screenshot of the succeeded Final Check](postman_succeeded_final_check.png)
 
 ## Certification Earned
-Postman API Fundamentals Student Expert
+*Postman API Fundamentals Student Expert*
 
 <a href="https://badges.parchment.com/public/assertions/IZi0yw7eQ0GeDnybEIe8HA" target="_blank">
 <img src="https://badges.parchment.com/public/assertions/IZi0yw7eQ0GeDnybEIe8HA/image" width="150" alt="Postman Certified Badge">
